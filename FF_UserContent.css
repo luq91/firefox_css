@@ -1,0 +1,28 @@
+/*htm,html *{
+	color: #FFFFFF !important;
+
+	background-color: #202020!important;
+        font-family: consolas;
+
+}
+*/
+
+
+*htm,html *{
+  background-color: #FFFFFF;
+}
+
+@-moz-document url-prefix(about:blank) {*{background-color:#202020;}}
+/*
+img, video {z-index: 1}
+* {border-color: #555555 !important}
+cite, cite * {color: #029833 !important}
+:link, :link * {color: #8db2e5 !important}
+input, textarea {background-color: #333333 !important}
+a {background-color: rgba(255, 255, 255, 0.01) !important}
+:visited, :visited * {color: rgb(211, 138, 138) !important}
+html, body, input, select, button {background-image: none !important}
+
+video {
+  background-color: transparent !important;
+}

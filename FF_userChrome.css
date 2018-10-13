@@ -1,0 +1,136 @@
+/*chrome like initial tab space*/
+#tabbrowser-tabs {
+    margin-left: 28px !important;
+    margin-bottom: 0px !important;/*no bottom tab border, for windows change to -2px |||| uq - na w7 0px */
+}
+/*maintoolbar shadow, hides ugly black toolbar border */
+#nav-bar { /* main toolbar */
+    -moz-box-ordinal-group: 1 !important;
+box-shadow: 0px -1px 0px 0px ThreeDShadow !important;}
+/*remove separators*/
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+    display: none !important;
+}
+
+/*rightshift*/
+.tabbrowser-tab {
+    margin: 0 -23px 0 0px !important;
+}
+
+/*no tab line*/
+.tab-line {
+    height: 0px !important;
+}
+/*rightshift tabcontent*/
+.tab-content {
+    padding: 0 25px !important;
+}
+/*move newtab button to the right*/
+.tabs-newtab-button.toolbarbutton-1 {
+    margin-left: 20px !important;
+}
+/*hm?*/
+.titlebar-placeholder[type="pre-tabs"] {
+    border-inline-end: initial !important;
+}
+
+#tabbrowser-tabs:not([movingtab])>.tabbrowser-tab[beforeselected-visible]::after,
+#tabbrowser-tabs[movingtab]>.tabbrowser-tab[visuallyselected]::before,
+.tabbrowser-tab[visuallyselected]::after {
+    margin-top: 0;
+    margin-bottom: 1px;
+    border: none !important;
+}
+
+[tabsintitlebar]:root:not([extradragspace]) .tabbrowser-tab::after,
+.tabbrowser-tab:hover::after,
+#tabbrowser-tabs:not([movingtab])>.tabbrowser-tab[beforehovered]::after {
+    border: none !important;
+}
+
+/*chrome like buttons
+#PanelUI-menu-button {
+    list-style-image: url("chrome://browser/skin/page-action.svg") !important;
+    transform: rotate(90deg)
+}
+*/
+#PanelUI-button{
+    border-image-slice: 0 !important;
+}
+
+/*tab style*/
+tab:after { display: none !important; }
+tab:before { border: none!important; }
+tab>.tab-stack>.tab-background {
+ /* -moz-appearance: tabpanel !important;*/
+    border-color: ThreeDShadow !important;
+    border-radius: 2px 2px 0 0 !important;
+    border-width: 1px 1px 0 1px !important;
+    border-style: solid !important;
+    margin: 0 10px 0 !important;
+    -moz-transform: perspective(100px) rotateX(30deg);
+}
+.tab-close-button {
+    background: unset !important;
+    border-radius: 2em !important;
+}
+
+/**/.tabs-newtab-button, #TabsToolbar > #new-tab-button, #TabsToolbar > toolbarpaletteitem > #new-tab-button {
+	list-style-image: none !important;
+  -moz-appearance: button !important;
+/*-moz-transform:  skew(28deg); this breaks the button for windows*/
+  min-height: unset !important;
+  height: 1px !important;
+  min-width: unset !important;
+  width: 12px !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+
+}
+/* hover chyba? */
+/*
+:root:not([customizing]) #nav-bar toolbarbutton
+ {
+    margin-left: -28px !important;
+    opacity: 0 !important;
+    transform: scale(.85, .85) !important;
+    pointer-events: none !important;
+    transition: all 100ms var(--animation-easing-function) !important;
+}
+*/
+
+
+
+/* ------------------------------------- */
+
+.urlbar-input-box>.urlbar-input::placeholder {
+opacity: 0 !important; }
+
+/*
+toolbarbutton:hover .toolbarbutton-badge-stack,
+toolbarbutton:not([disabled]):not(.bookmark-item):not(.titlebar-button):not(.subviewbutton):hover
+    > .toolbarbutton-icon,
+.bookmark-item:hover,.tabbrowser-tab:hover {
+    background: none !important;
+}
+*/
+#urlbar[pageproxystate="invalid"] > #identity-box > #identity-icon {
+  display: none !important;
+}
+
+
+
+
+/*
+#urlbar-container, #urlbar {
+
+  opacity: 50%;
+}
+*/
+
+
+
+/* urlbar - width */
+
+/*  ------------------------------------ */
