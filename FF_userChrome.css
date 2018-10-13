@@ -49,12 +49,6 @@ box-shadow: 0px -1px 0px 0px ThreeDShadow !important;}
     border: none !important;
 }
 
-/*chrome like buttons
-#PanelUI-menu-button {
-    list-style-image: url("chrome://browser/skin/page-action.svg") !important;
-    transform: rotate(90deg)
-}
-*/
 #PanelUI-button{
     border-image-slice: 0 !important;
 }
@@ -88,49 +82,10 @@ tab>.tab-stack>.tab-background {
   margin-bottom: 5px !important;
 
 }
-/* hover chyba? */
-/*
-:root:not([customizing]) #nav-bar toolbarbutton
- {
-    margin-left: -28px !important;
-    opacity: 0 !important;
-    transform: scale(.85, .85) !important;
-    pointer-events: none !important;
-    transition: all 100ms var(--animation-easing-function) !important;
-}
-*/
-
-
-
-/* ------------------------------------- */
 
 .urlbar-input-box>.urlbar-input::placeholder {
 opacity: 0 !important; }
 
-/*
-toolbarbutton:hover .toolbarbutton-badge-stack,
-toolbarbutton:not([disabled]):not(.bookmark-item):not(.titlebar-button):not(.subviewbutton):hover
-    > .toolbarbutton-icon,
-.bookmark-item:hover,.tabbrowser-tab:hover {
-    background: none !important;
-}
-*/
 #urlbar[pageproxystate="invalid"] > #identity-box > #identity-icon {
   display: none !important;
 }
-
-
-
-
-/*
-#urlbar-container, #urlbar {
-
-  opacity: 50%;
-}
-*/
-
-
-
-/* urlbar - width */
-
-/*  ------------------------------------ */
