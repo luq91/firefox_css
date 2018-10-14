@@ -1,5 +1,6 @@
 *htm,html *{
   background-color: #FFFFFF;
+  color: #000000;
 }
 
 @-moz-document url-prefix(about:blank) {*{background-color:#202020;}}
