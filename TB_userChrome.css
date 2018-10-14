@@ -6,7 +6,8 @@
 
 #nav-bar {
     -moz-box-ordinal-group: 1 !important;
-	box-shadow: 0px -1px 0px 0px ThreeDShadow !important;}
+	box-shadow: 0px -1px 0px 0px ThreeDShadow !important;
+}
 
 .tabbrowser-tab::after,
 .tabbrowser-tab::before {
@@ -66,7 +67,7 @@ tab>.tab-stack>.tab-background {
     border-radius: 2em !important;
 }
 
-/**/.tabs-newtab-button, #TabsToolbar > #new-tab-button, #TabsToolbar > toolbarpaletteitem > #new-tab-button {
+.tabs-newtab-button, #TabsToolbar > #new-tab-button, #TabsToolbar > toolbarpaletteitem > #new-tab-button {
 	list-style-image: none !important;
 	-moz-appearance: button !important;
 	min-height: unset !important;
@@ -75,6 +76,7 @@ tab>.tab-stack>.tab-background {
 	width: 12px !important;
 	margin-top: 5px !important;
 	margin-bottom: 5px !important;
+
 }
 
 treechildren:-moz-tree-cell-text(unread) {
@@ -83,9 +85,16 @@ treechildren:-moz-tree-cell-text(unread) {
 }
 
 .urlbar-input-box>.urlbar-input::placeholder {
-	opacity: 0 !important; 
+	opacity: 0 !important;
 }
 
 #urlbar[pageproxystate="invalid"] > #identity-box > #identity-icon {
 	display: none !important;
+}
+
+treechildren::-moz-tree-cell-text(subfoldersHaveUnreadMessages-true) {
+	color: #FFFF00 !important;
+}
+treechildren::-moz-tree-cell-text(hasUnreadMessages-true) {
+	color: #FFFF00 !important;
 }
