@@ -1,13 +1,13 @@
-*htm,html *{
-  background-color: #FFFFFF;
-  color: #000000;
-}
-#search input{
-  background-color: #FFFFFF;
-  color: #000000;
-}
-#input, select, textarea{
-  background-color: #FFFFFF;
-  color: #000000;
-}
-@-moz-document url-prefix(about:blank) {*{background-color:#202020;}}
+@-moz-document url-prefix(about:blank) {
+  *{
+    background-color:#202020;
+    }
+  }
+
+  /* scrollbar settings - smaller and dark */
+  :root{
+    scrollbar-face-color: rgb(210,210,210); /* Firefox 63 compatibility */
+    scrollbar-track-color: rgb(46,54,69); /* Firefox 63 compatibility */
+    scrollbar-color: rgb(210,210,210) rgb(46,54,69);
+    scrollbar-width: thin;
+  }
