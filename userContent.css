@@ -1,0 +1,12 @@
+@-moz-document url(about:newtab), url(about:blank){
+  body{
+    background-color: #424242 !important;
+  }
+}
+
+:root{
+  scrollbar-face-color: rgb(255,140,0); /* Firefox 63 compatibility */
+  scrollbar-track-color: rgb(0,0,0); /* Firefox 63 compatibility */
+  scrollbar-color: rgb(255,140,00) rgb(0,0,0);
+  scrollbar-width: thin;
+}

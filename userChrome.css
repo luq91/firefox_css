@@ -1,0 +1,36 @@
+/*  */
+.browserContainer {
+    position: relative;
+    background-color: #000000 !important;
+}
+
+findbar {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.urlbar-input-box>.urlbar-input::placeholder {
+	opacity: 0 !important;
+}
+
+#urlbar[pageproxystate="invalid"] > #identity-box > #identity-icon {
+	display: none !important;
+}
+
+#urlbar{
+	text-align: center !important;
+	color: darkorange !important;
+	/* font-family: consolas; */
+	background-color: #131313 !important;
+	/* border-radius: 10px !important; */
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.tab-line{
+	height:2px !important;
+	background-image: linear-gradient(to right, darkorange, darkorange);
+	margin-left: 1px !important;
+	margin-right: 1px !important;
+}
