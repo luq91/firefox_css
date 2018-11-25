@@ -1,7 +1,14 @@
 /*  */
+:root  {
+  --darkbg: #424242;
+  --details: rgba(166,66,222,1);  /* purple */
+//  --details: darkorange;
+
+}
+
 .browserContainer {
     position: relative;
-    background-color: #424242 !important;
+    background-color: var(--darkbg) !important;
 }
 
 findbar {
@@ -20,8 +27,8 @@ findbar {
 
 #urlbar{
 	text-align: center !important;
-	color: darkorange !important;
-	/* font-family: consolas; */
+	color: var(--details) !important;
+//	font-family: consolas;
 	background-color: #131313 !important;
 	/* border-radius: 10px !important; */
   border: none !important;
@@ -30,7 +37,11 @@ findbar {
 
 .tab-line{
 	height:2px !important;
-	background-image: linear-gradient(to right, darkorange, darkorange);
+	background-image: linear-gradient(to right, var(--details), var(--details));
 	margin-left: 1px !important;
 	margin-right: 1px !important;
 }
+
+.autocomplete-richlistitem[selected=true] {
+    background-color: var(--details) !important;
+  }
