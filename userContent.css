@@ -1,14 +1,14 @@
 @import "userChrome.css";
 
-@-moz-document url(about:newtab), url(about:blank){
-  body{
-    background-color: var(--darkbg) !important;
+@-moz-document url(about:newtab), url(about:blank) {
+  body {
+    background-color: var(--darkbg);
   }
 }
 
-:root{
-  scrollbar-face-color: var(--details); /* Firefox 63 compatibility */
-  scrollbar-track-color:  black; /* Firefox 63 compatibility */
+:root {
+  scrollbar-face-color: var(--details);
+  scrollbar-track-color: black;
   scrollbar-color: var(--details);
-  scrollbar-width: thin;
+  scrollbar-width: none !important; /* thin / none */
 }
