@@ -1,10 +1,14 @@
 /*  */
 :root {
   --darkbg: #424242;
+  //--urlbar_background: rgba(222,222,222,1); /* light */
+  // --urlbar_background: #131313; /* dark */
   //  --details: rgba(166,66,222,1);  /* purple */
   // --details: rgba(255,140,0,1); /* orange */
   // --details: rgba(0, 153, 188, 1);  /* light blue */
-  --details: rgba(186, 186, 186, 1);  /* light gray*/
+  //--details: rgba(186, 186, 186, 1);  /* light gray*/
+  //--details: rgba(68, 68, 68, 1);  /* dark gray*/
+  --details: rgba(15, 112, 15, 1);  /* green-widnows10 */
 }
 
 .browserContainer {
