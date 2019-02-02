@@ -1,14 +1,7 @@
 /*  */
 :root {
   --darkbg: #424242;
-  //--urlbar_background: rgba(222,222,222,1); /* light */
-  // --urlbar_background: #131313; /* dark */
-  //  --details: rgba(166,66,222,1);  /* purple */
-  // --details: rgba(255,140,0,1); /* orange */
-  // --details: rgba(0, 153, 188, 1);  /* light blue */
-  //--details: rgba(186, 186, 186, 1);  /* light gray*/
-  //--details: rgba(68, 68, 68, 1);  /* dark gray*/
-  --details: rgba(15, 112, 15, 1);  /* green-widnows10 */
+  --details: rgba(255,140,0,1);
 }
 
 .browserContainer {
@@ -32,8 +25,6 @@ findbar {
 
 #urlbar {
   color: var(--details) !important;
-  background-color: #131313 !important;
-  /* border-radius: 10px !important; */
   border: none !important;
   box-shadow: none !important;
 }
@@ -45,142 +36,6 @@ findbar {
   margin-right: 1px !important;
 }
 
-.autocomplete-richlistitem[selected=true] {
-  background-color: var(--details) !important;
-}
-
 #titlebar-buttonbox {
   background: var(--chrome-background-color);
-}
-
-menupopup {
-  -moz-appearance: none !important;
-  padding: 1px !important;
-  background-color: #2B2B2B !important;
-  border: 1px #A0A0A0 solid !important;
-  min-width: 200px !important;
-}
-
-menuseparator {
-  -moz-appearance: none !important;
-  border: none !important;
-  padding: .5px 0px .5px 0px !important;
-  margin: 1px !important;
-  background-color: #808080 !important;
-}
-
-menuitem, menu {
-  -moz-appearance: none !important;
-  color: white !important;
-  padding: 5px 0px 5px 0px !important;
-}
-
-menuitem[disabled="true"], menuitem[disabled="true"]>.menu-text {
-  color: gray !important;
-}
-
-menuitem:hover, menu:hover, menu[open="true"], menuitem[_moz-menuactive="true"] {
-  -moz-appearance: none !important;
-  padding: 5px 0px 5px 0px !important;
-  background-color: #414141 !important;
-}
-
-menugroup {
-  padding: 0px !important;
-  background-color: transparent !important;
-}
-
-menuitem>.menu-text, menuitem>.menu-iconic-text {
-  color: white !important;
-}
-
-menuitem[type="checkbox"] {
-  padding-left: 5px !important;
-  padding-top: 3px !important;
-  padding-bottom: 3px !important;
-}
-
-menuitem[type="radio"] {
-  padding-left: 5px !important;
-  padding-top: 3px !important;
-  padding-bottom: 3px !important;
-}
-
-menuitem[type="checkbox"]>.menu-iconic-text, menuitem[type="radio"]>.menu-iconic-text {
-  padding-left: 3px !important;
-}
-
-menuitem[checked="true"][type="checkbox"]>.menu-iconic-left {
-  padding: 3px 0px 0px 0px !important;
-  border: solid white;
-  border-width: 0 0 2px 2px;
-  transform: rotate(-45deg) scale(.75);
-  margin-bottom: 2px !important;
-}
-
-menuitem[checked="true"][type="radio"]>.menu-iconic-left {
-  padding: 1px !important;
-  border: solid white;
-  height: 17px !important;
-  border-radius: 100%;
-  background: white;
-  transform: scale(.5);
-}
-
-menucaption {
-  background-color: transparent !important;
-  color: white !important;
-}
-
-#ContentSelectDropdown>menupopup {
-  background-image: none !important;
-}
-
-#ContentSelectDropdown {
-  padding: 0px !important;
-}
-
-menulist {
-  -moz-appearance: none !important;
-  padding: 2px !important;
-  border: 2px solid #666666 !important;
-  background-color: transparent !important;
-}
-
-menulist:hover {
-  padding: 2px !important;
-  border: 2px solid #999999 !important;
-  background-color: transparent !important;
-}
-
-menulist[open="true"] {
-  border: 2px solid #666666 !important;
-  background-color: #333333 !important;
-}
-
-#context-back>.menu-iconic-left, #context-forward>.menu-iconic-left, #context-reload>.menu-iconic-left, #context-stop>.menu-iconic-left, #context-bookmarkpage>.menu-iconic-left {
-  padding: 0px !important;
-}
-
-.menu-iconic-left {
-  -moz-appearance: none !important;
-  padding: 0px 5px 0px 9px !important;
-}
-
-.menu-right {
-  -moz-appearance: none !important;
-  padding: 5px !important;
-  margin-right: 3px !important;
-  color: white !important;
-  border: solid white;
-  border-width: 0 2px 2px 0px;
-  transform: rotate(-45deg) scale(.55);
-}
-
-tooltip {
-  -moz-appearance: none !important;
-  color: white !important;
-  background-color: #2B2B2B !important;
-  border: 1px solid #767676 !important;
-  padding: 3px !important;
 }
