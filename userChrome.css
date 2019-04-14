@@ -1,7 +1,16 @@
 /*  */
 :root {
   --darkbg: #424242;
-  --details: rgba(255,140,0,1);
+  // --details: rgba(255, 140, 0, 1);
+  // --details: rgba(191, 191, 191, 1);
+  // --details: rgba(222, 0, 0, 1);
+  --details: rgba(127, 0, 1, 1);
+  --adjustment-value: 5px;
+  /* tym sie modyfikuje grubosc toolbara i tabbara (wiecej - mniejszy)*/
+}
+
+:root[sizemode="maximized"]>#navigator-toolbox {
+  margin-top: 7px
 }
 
 .browserContainer {
@@ -24,18 +33,64 @@ findbar {
 }
 
 #urlbar {
-  color: var(--details) !important;
+  /* color: var(--details) !important; */
   border: none !important;
-  box-shadow: none !important;
+  /* box-shadow: none !important; */
+  margin-top: var(--urlbar-margin) !important;
+  margin-bottom: var(--urlbar-margin) !important;
+  font-size: 11px !important;
 }
 
 .tab-line {
   height: 2px !important;
   background-image: linear-gradient(to right, var(--details), var(--details));
-  margin-left: 1px !important;
-  margin-right: 1px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 
 #titlebar-buttonbox {
   background: var(--chrome-background-color);
+  /*po to zeby minimalizacja zamykanie byly w kolorze tla*/
+}
+
+/* C Z A R Y   M A R Y - zerzniete zywcem od goscia z /r/firefoxcss */
+/* */
+/* Global */
+#navigator-toolbox {
+  --toolbarbutton-inner-padding: calc(6px - var(--adjustment-value))
+}
+
+/*Tabs toolbar*/
+#TabsToolbar {
+  --tab-min-height: calc(29px - var(--adjustment-value) * 2);
+  /*  margin-top: 7px !important; */
+  font-size: 11px !important;
+  color: #777;
+}
+
+#titlebar {
+  -moz-appearance: none !important;
+}
+
+.titlebar-button {
+  padding: calc(8px - var(--adjustment-value)) 17px !important;
+}
+
+/* Main toolbar */
+#nav-bar {
+  --urlbar-margin: calc(var(--toolbarbutton-inner-padding) - 3px)
+}
+
+#urlbar {
+
+}
+
+/* addons icons */
+.toolbarbutton-badge-stack>.toolbarbutton-icon {
+  filter: grayscale(100%);
+  transform: scale(0.8);
+}
+
+#forward-button, #back-button, #reload-button {
+    transform: scale(0.8);
 }
