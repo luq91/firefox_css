@@ -2,7 +2,6 @@
 :root {
   --darkbg: #424242;
   --adjustment-value: 6px;
-  /* tym sie modyfikuje grubosc toolbara i tabbara (wiecej - mniejszy)*/
 }
 
 :root[sizemode="maximized"]>#navigator-toolbox {
@@ -43,19 +42,10 @@ findbar {
   margin-right: 0px !important;
 }
 
-#titlebar-buttonbox {
-  background: var(--chrome-background-color);
-  /*po to zeby minimalizacja zamykanie byly w kolorze tla*/
-}
-
-/* C Z A R Y   M A R Y - zerzniete zywcem od goscia z /r/firefoxcss */
-/* */
-/* Global */
 #navigator-toolbox {
   --toolbarbutton-inner-padding: calc(6px - var(--adjustment-value))
 }
 
-/*Tabs toolbar*/
 #TabsToolbar {
   --tab-min-height: calc(29px - var(--adjustment-value) * 2);
   /*  margin-top: 7px !important; */
@@ -71,12 +61,12 @@ findbar {
   --urlbar-margin: calc(var(--toolbarbutton-inner-padding) - 3px)
 }
 
-/* addons icons */
+/* addons icons
 .toolbarbutton-badge-stack>.toolbarbutton-icon {
   filter: grayscale(100%);
   transform: scale(0.8);
 }
-
+*/
 #forward-button, #back-button, #reload-button {
   transform: scale(0.8);
 }
