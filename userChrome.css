@@ -1,6 +1,6 @@
 /*  */
 :root {
-  --darkbg: #424242;
+  --darkbg: #444444;
   --adjustment-value: 6px;
 }
 
@@ -13,14 +13,19 @@
   background-color: var(--darkbg) !important;
 }
 
-findbar {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
 .urlbar-input-box>.urlbar-input::placeholder {
   opacity: 0 !important;
+}
+
+.titlebar-button {
+  padding: calc(8px - var(--adjustment-value)) 17px !important;
+}
+
+.tab-line {
+  height: 2px !important;
+  background-image: linear-gradient(to right, var(--details), var(--details));
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 
 #urlbar[pageproxystate="invalid"]>#identity-box>#identity-icon {
@@ -33,13 +38,7 @@ findbar {
   margin-top: var(--urlbar-margin) !important;
   margin-bottom: var(--urlbar-margin) !important;
   font-size: 11px !important;
-}
-
-.tab-line {
-  height: 2px !important;
-  background-image: linear-gradient(to right, var(--details), var(--details));
-  margin-left: 0px !important;
-  margin-right: 0px !important;
+  background-color: rgba(215, 215, 215, 1) !important;
 }
 
 #navigator-toolbox {
@@ -52,21 +51,16 @@ findbar {
   font-size: 11px !important;
 }
 
-.titlebar-button {
-  padding: calc(8px - var(--adjustment-value)) 17px !important;
-}
-
-/* Main toolbar */
 #nav-bar {
   --urlbar-margin: calc(var(--toolbarbutton-inner-padding) - 3px)
 }
 
-/* addons icons
-.toolbarbutton-badge-stack>.toolbarbutton-icon {
-  filter: grayscale(100%);
-  transform: scale(0.8);
-}
-*/
 #forward-button, #back-button, #reload-button {
   transform: scale(0.8);
+}
+
+findbar {
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
