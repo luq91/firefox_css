@@ -5,8 +5,13 @@
 }
 
 :root[sizemode="maximized"]>#navigator-toolbox {
-  margin-top: 0px !important;
+  margin-top: -1px !important;
 }
+
+:root[sizemode="normal"]>#navigator-toolbox {
+  margin-top: -9px !important;
+}
+
 
 .browserContainer {
   position: relative;
