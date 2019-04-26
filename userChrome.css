@@ -5,7 +5,7 @@
 }
 
 :root[sizemode="maximized"]>#navigator-toolbox {
-  margin-top: 0px
+  margin-top: 0px !important;
 }
 
 .browserContainer {
@@ -38,7 +38,6 @@
   margin-top: var(--urlbar-margin) !important;
   margin-bottom: var(--urlbar-margin) !important;
   font-size: 11px !important;
-  background-color: rgba(215, 215, 215, 1) !important;
 }
 
 #navigator-toolbox {
