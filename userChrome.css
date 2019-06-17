@@ -2,6 +2,8 @@
 :root {
   --darkbg: #444444;
   --adjustment-value: 6px;
+  /* --details: rgba(133, 133, 133, 1); */
+  --details: darkorange;
 }
 
 :root[sizemode="maximized"]>#navigator-toolbox {
@@ -11,7 +13,6 @@
 :root[sizemode="normal"]>#navigator-toolbox {
   margin-top: -9px !important;
 }
-
 
 .browserContainer {
   position: relative;
@@ -27,7 +28,8 @@
 }
 
 .tab-line {
-  height: 2px !important;
+  /* height: 20px !important; */
+  height: 0px !important;
   background-image: linear-gradient(to right, var(--details), var(--details));
   margin-left: 0px !important;
   margin-right: 0px !important;
@@ -67,4 +69,22 @@ findbar {
   position: absolute;
   top: 0px;
   right: 0px;
+}
+
+/* border around the tab */
+.tabbrowser-tab[selected] {
+  background-color: #000 !important;
+  border-top: 2px solid var(--details) !important;
+  border-left: 2px solid var(--details) !important;
+  border-right: 2px solid var(--details) !important;
+  box-shadow: 0px 0px 10px 1px var(--details) !important;
+  /* border-radius: 8px 8px 0 0 !important; */
+}
+
+/* long horizontal line */
+#nav-bar {
+  background: #000000 !important;
+  border-top: 2px solid var(--details) !important;
+  margin-top: -2px !important;
+  border-top-width: -1px !important;
 }
