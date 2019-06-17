@@ -3,7 +3,7 @@
   --darkbg: #444444;
   --adjustment-value: 6px;
   /* --details: rgba(133, 133, 133, 1); */
-  --details: darkorange;
+  --details: rgba(242, 165, 109, 1);
 }
 
 :root[sizemode="maximized"]>#navigator-toolbox {
