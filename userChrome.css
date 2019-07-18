@@ -2,8 +2,7 @@
 :root {
   --darkbg: #444444;
   --adjustment-value: 6px;
-  /* --details: rgba(133, 133, 133, 1); */
-  --details: rgba(242, 165, 109, 1);
+  --details: white;
 }
 
 :root[sizemode="maximized"]>#navigator-toolbox {
