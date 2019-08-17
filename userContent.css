@@ -7,9 +7,5 @@
 }
 
 :root {
-  scrollbar-face-color: var(--details);
-  scrollbar-track-color: black;
-  scrollbar-color: var(--details);
   scrollbar-width: none !important;
-  /* thin / none */
 }

@@ -1,16 +1,16 @@
 /*  */
 :root {
-  --darkbg: #444444;
+  --darkbg: #444;
   --adjustment-value: 6px;
   --details: rgba(222, 12, 12, .8);
 }
 
 :root[sizemode="maximized"]>#navigator-toolbox {
-  margin-top: -1px !important;
+  margin-top: -2px !important;
 }
 
 :root[sizemode="normal"]>#navigator-toolbox {
-  margin-top: -9px !important;
+  margin-top: -10px !important;
 }
 
 .browserContainer {
@@ -18,24 +18,8 @@
   background-color: var(--darkbg) !important;
 }
 
-.urlbar-input-box>.urlbar-input::placeholder {
-  opacity: 0 !important;
-}
-
-.titlebar-button {
-  padding: calc(8px - var(--adjustment-value)) 17px !important;
-}
-
 .tab-line {
-  /* height: 20px !important; */
-  height: 0px !important;
   background-image: linear-gradient(to right, var(--details), var(--details));
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-}
-
-#urlbar[pageproxystate="invalid"]>#identity-box>#identity-icon {
-  display: none !important;
 }
 
 #urlbar {
@@ -46,44 +30,20 @@
   font-size: 11px !important;
 }
 
+/*   scalling   */
+.titlebar-button {
+  padding: calc(8px - var(--adjustment-value)) 17px !important;
+}
+
 #navigator-toolbox {
   --toolbarbutton-inner-padding: calc(6px - var(--adjustment-value))
 }
 
 #TabsToolbar {
   --tab-min-height: calc(29px - var(--adjustment-value) * 2);
-  /*  margin-top: 7px !important; */
   font-size: 11px !important;
 }
 
 #nav-bar {
   --urlbar-margin: calc(var(--toolbarbutton-inner-padding) - 3px)
-}
-
-#forward-button, #back-button, #reload-button {
-  transform: scale(0.8);
-}
-
-findbar {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-/* border around the tab */
-.tabbrowser-tab[selected] {
-  background-color: #000 !important;
-  border-top: 2px solid var(--details) !important;
-  border-left: 2px solid var(--details) !important;
-  border-right: 2px solid var(--details) !important;
-  box-shadow: 0px 0px 10px 1px var(--details) !important;
-  /* border-radius: 8px 8px 0 0 !important; */
-}
-
-/* long horizontal line */
-#nav-bar {
-  background: #000000 !important;
-  border-top: 2px solid var(--details) !important;
-  margin-top: -2px !important;
-  border-top-width: -1px !important;
 }
