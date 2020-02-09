@@ -1,49 +1,66 @@
-/*  */
 :root {
   --darkbg: #444;
-  --adjustment-value: 6px;
-  --details: rgba(222, 12, 12, .8);
+  --adjustment-value: 8px;
+  --details: rgba(119, 0, 0, 0.884);
 }
 
-:root[sizemode="maximized"]>#navigator-toolbox {
-  margin-top: -2px !important;
-}
-
-:root[sizemode="normal"]>#navigator-toolbox {
-  margin-top: -10px !important;
-}
 
 .browserContainer {
   position: relative;
   background-color: var(--darkbg) !important;
 }
 
-.tab-line {
-  background-image: linear-gradient(to right, var(--details), var(--details));
+#titlebar {
+  -moz-appearance: none !important;
+}
+
+:root[sizemode="maximized"] {
+  padding-top: 8px !important;
+}
+
+#urlbar,
+#searchbar,
+#TabsToolbar,
+.tabbrowser-tab,
+#tabbrowser-tabs>.tabbrowser-arrowscrollbox,
+#tabbrowser-tabs {
+  min-height: 10px !important;
+  max-height: 18px !important;
+  font-size: 11px !important;
+
+}
+
+#nav-bar .toolbarbutton-1>.toolbarbutton-icon,
+.titlebar-button>.toolbarbutton-icon {
+  width: calc(2 * var(--toolbarbutton-inner-padding) + 10px) !important;
+  height: calc(2 * var(--toolbarbutton-inner-padding) + 10px) !important;
+}
+
+
+.titlebar-buttonbox-container {
+  display: none;
 }
 
 #urlbar {
-  border: none !important;
   box-shadow: none !important;
-  margin-top: var(--urlbar-margin) !important;
-  margin-bottom: var(--urlbar-margin) !important;
-  font-size: 11px !important;
 }
 
-/*   scalling   */
+
 .titlebar-button {
-  padding: calc(8px - var(--adjustment-value)) 17px !important;
+  padding-block: 2px !important;
 }
 
-#navigator-toolbox {
-  --toolbarbutton-inner-padding: calc(6px - var(--adjustment-value))
+.titlebar-buttonbox-container {
+  --toolbarbutton-inner-padding: 2px
 }
 
-#TabsToolbar {
-  --tab-min-height: calc(29px - var(--adjustment-value) * 2);
-  font-size: 11px !important;
+#alltabs-button,
+.scrollbutton-up[orient="horizontal"],
+.scrollbutton-down[orient="horizontal"] {
+  visibility: collapse
 }
 
-#nav-bar {
-  --urlbar-margin: calc(var(--toolbarbutton-inner-padding) - 3px)
-}
+/* 
+.tab-line {
+  background-image: linear-gradient(to right, var(--details), var(--details));
+} */
