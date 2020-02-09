@@ -39,7 +39,8 @@
   height: 10px !important;
 }
 
-.titlebar-spacer[type="post-tabs"] {
+/* .titlebar-spacer[type="post-tabs"] */
+.titlebar-spacer[type="pre-tabs"] {
   display: none;
 }
 
