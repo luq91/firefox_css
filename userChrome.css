@@ -4,7 +4,6 @@
   --details: rgba(119, 0, 0, 0.884);
 }
 
-
 .browserContainer {
   position: relative;
   background-color: var(--darkbg) !important;
@@ -36,15 +35,17 @@
   height: calc(2 * var(--toolbarbutton-inner-padding) + 10px) !important;
 }
 
-
 .titlebar-buttonbox-container {
+  height: 10px !important;
+}
+
+.titlebar-spacer[type="post-tabs"] {
   display: none;
 }
 
 #urlbar {
   box-shadow: none !important;
 }
-
 
 .titlebar-button {
   padding-block: 2px !important;
@@ -57,7 +58,7 @@
 #alltabs-button,
 .scrollbutton-up[orient="horizontal"],
 .scrollbutton-down[orient="horizontal"] {
-  visibility: collapse
+  visibility: collapse;
 }
 
 /* 
