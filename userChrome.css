@@ -39,7 +39,7 @@
   height: 10px !important;
 }
 
-/* .titlebar-spacer[type="post-tabs"] */
+.titlebar-spacer[type="post-tabs"],
 .titlebar-spacer[type="pre-tabs"] {
   display: none;
 }
@@ -57,17 +57,3 @@
 .scrollbutton-down[orient="horizontal"] {
   visibility: collapse;
 }
-
-
-
-/* 
-#urlbar[focused] {
-  box-shadow: none !important;
-  border: 1px solid var(--details) !important;
-}
-
-.tab-line {
-  background-image: linear-gradient(to right, var(--details), var(--details));
-} 
-
-*/
