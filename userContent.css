@@ -1,11 +1,3 @@
-@import "userChrome.css";
-
-@-moz-document url(about:newtab), url(about:blank) {
-  body {
-    background-color: var(--darkbg);
-  }
-}
-
 :root {
   scrollbar-width: none !important;
 }
