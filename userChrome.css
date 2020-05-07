@@ -2,3 +2,7 @@
 .titlebar-spacer[type="pre-tabs"] {
   display: none;
 }
+
+#TabsToolbar>.titlebar-buttonbox-container {
+  visibility: collapse !important;
+}
