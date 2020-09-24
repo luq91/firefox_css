@@ -1,14 +1,5 @@
 @import "userChrome.css";
 
-@-moz-document url("about:home"),
-url("about:blank"),
-url("about:newtab"),
-url("about:privatebrowsing") {
-  body {
-    background-color: rgb(39, 41, 46) !important
-  }
-}
-
 :root {
   scrollbar-width: none !important;
 }
