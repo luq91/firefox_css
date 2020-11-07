@@ -1,5 +1,8 @@
 @import "userChrome.css";
 
 :root {
-  scrollbar-width: none !important;
+  scrollbar-width: thin !important;
+//  scrollbar-color: grey black;
+  scrollbar-color: rgb(121, 121, 123) rgb(35, 35, 39);
+
 }
