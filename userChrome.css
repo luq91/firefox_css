@@ -8,10 +8,28 @@
 }
 
 /* ciemne karty w tle */
-.tabbrowser-tab:not([selected], [pinned], :hover) .tab-label-container,
-.tab-icon-image:not([selected], [pinned], :hover) {
-  opacity: .25;
+/*
+.tabbrowser-tab:not([selected], [pinned], :hover) .tab-label-container
+, .tab-icon-image:not([selected], [pinned], :hover) 
+{
+	opacity: .5;
 }
+*/
+
+
+#tabbrowser-tabs:not([movingtab])>#tabbrowser-arrowscrollbox>.tabbrowser-tab>.tab-stack>.tab-background[multiselected="true"]:-moz-lwtheme,
+#tabbrowser-tabs:not([movingtab])>#tabbrowser-arrowscrollbox>.tabbrowser-tab>.tab-stack>.tab-background[selected="true"]:-moz-lwtheme {
+  background-image: none !important;
+  background-color: #bbb !important;
+}
+
+
+.tabbrowser-tab[multiselected]:-moz-lwtheme,
+.tabbrowser-tab[visuallyselected="true"]:-moz-lwtheme {
+  color: rgb(0, 0, 0) !important;
+}
+
+
 
 /* ramka paska adresu */
 :root:-moz-lwtheme-brighttext {
