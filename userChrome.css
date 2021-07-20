@@ -10,7 +10,7 @@
 /* ciemne karty w tle */
 .tabbrowser-tab:not([selected], [pinned], :hover) .tab-label-container,
 .tab-icon-image:not([selected], [pinned], :hover) {
-  opacity: .1;
+  opacity: .25;
 }
 
 /* ramka paska adresu */
