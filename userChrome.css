@@ -31,7 +31,6 @@
 .tabbrowser-tab[multiselected]:-moz-lwtheme,
 .tabbrowser-tab[visuallyselected="true"]:-moz-lwtheme {
   color: rgb(0, 0, 0) !important;
-  text-transform: uppercase !important;
 }
 
 :root[lwt-toolbar-field-focus-brighttext] {
@@ -39,7 +38,7 @@
 }
 
 :root:-moz-lwtheme-brighttext {
-  --focus-outline-color: rgba(255, 255, 255, 0.658) !important;
+  --focus-outline-color: rgb(90, 175, 245) !important;
 }
 
 
