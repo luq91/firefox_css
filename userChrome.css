@@ -12,15 +12,13 @@
   display: none;
 }
 
-/* Windows 10 context menu */
-@media (-moz-os-version: windows-win10) {
-
-  /* Context Menu: Reduce vertical space */
-  menupopup>menuitem,
-  menupopup>menu {
-    padding-block: 0px !important;
-  }
+/* context menu */
+menupopup>menuitem,
+menupopup>menu {
+	padding-block: 0px !important;
 }
+
+
 
 #tabbrowser-tabs:not([movingtab])>#tabbrowser-arrowscrollbox>.tabbrowser-tab>.tab-stack>.tab-background[multiselected="true"]:-moz-lwtheme,
 #tabbrowser-tabs:not([movingtab])>#tabbrowser-arrowscrollbox>.tabbrowser-tab>.tab-stack>.tab-background[selected="true"]:-moz-lwtheme {
