@@ -3,6 +3,9 @@
   scrollbar-color: rgb(121, 121, 123) rgb(35, 35, 39);
 }
 @-moz-document url(about:privatebrowsing) {
+	html.private {
+    --in-content-page-background: #000 !important;
+	}
     .info {
         display: none !important;
     }
