@@ -1,8 +1,7 @@
 /* gorna ramka firefoxa w10 */
 #main-window:-moz-window-inactive{ border-top: 1px solid rgb(62,65,66) !important;} 
 #main-window:not(-moz-window-inactive){ border-top: 1px solid rgb(0,120,215) !important;} 
-
-
+#main-window[sizemode="maximized"]{ margin-top: -1px !important; }
 
 
 /* odstepy na pasku kart */
