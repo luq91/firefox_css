@@ -1,3 +1,10 @@
+/* gorna ramka firefoxa w10 */
+#main-window:-moz-window-inactive{ border-top: 1px solid rgb(62,65,66) !important;} 
+#main-window:not(-moz-window-inactive){ border-top: 1px solid rgb(0,120,215) !important;} 
+
+
+
+
 /* odstepy na pasku kart */
 .titlebar-spacer[type="post-tabs"] {
   display: none;
@@ -17,8 +24,6 @@ menupopup>menuitem,
 menupopup>menu {
 	padding-block: 0px !important;
 }
-
-
 
 #tabbrowser-tabs:not([movingtab])>#tabbrowser-arrowscrollbox>.tabbrowser-tab>.tab-stack>.tab-background[multiselected="true"]:-moz-lwtheme,
 #tabbrowser-tabs:not([movingtab])>#tabbrowser-arrowscrollbox>.tabbrowser-tab>.tab-stack>.tab-background[selected="true"]:-moz-lwtheme {
