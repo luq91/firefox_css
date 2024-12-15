@@ -133,3 +133,32 @@ menupopup>menu {
 .panel-header>.subviewbutton-back {
   padding: 4px !important;
 }
+
+
+
+
+/* naprawa gownianej ikony glosniczka, moze kiedys naprawia i bedzie do wywalenia */
+
+.tab-icon-stack:is([muted],[soundplaying],[activemedia-blocked]){
+  grid-template-areas: "a s";
+}
+
+.tab-icon-overlay:is([muted],[soundplaying],[activemedia-blocked]) {
+  grid-area: s;
+}
+
+.tab-icon-overlay {
+  background-position: center !important;
+  fill: currentColor !important;
+    background-color: color-mix(in srgb, var(--lwt-accent-color) 60%, transparent) !important;
+}
+
+.tab-icon-overlay:hover {
+  filter: brightness(1.10)!important;
+  opacity: 0.8 !important;
+    background-color: color-mix(in srgb, var(--lwt-accent-color) 60%, ghostwhite) !important;
+}
+
+.tab-icon-stack:is([soundplaying], [muted], [activemedia-blocked]) > * {
+  opacity: 1 !important;
+}
