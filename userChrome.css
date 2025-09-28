@@ -4,16 +4,6 @@
 #main-window[sizemode="maximized"]{ margin-top: -1px !important; }
 #main-window[sizemode="fullscreen"]{ margin-top: -1px !important; }
 
-
-/* odstepy na pasku kart */
-.titlebar-spacer[type="post-tabs"] {
-  display: none;
-}
-
-.titlebar-spacer[type="pre-tabs"] {
-  width: 10px !important;
-}
-
 /* "zapamietaj dla tego typu plikow" przy pobieraniu */
 #rememberChoice {
   display: none;
@@ -25,52 +15,18 @@ menupopup>menu {
 	padding-block: 0px !important;
 }
 
-#tabbrowser-tabs:not([movingtab])>#tabbrowser-arrowscrollbox>.tabbrowser-tab>.tab-stack>.tab-background[multiselected="true"]:-moz-lwtheme,
-#tabbrowser-tabs:not([movingtab])>#tabbrowser-arrowscrollbox>.tabbrowser-tab>.tab-stack>.tab-background[selected="true"]:-moz-lwtheme {
-  background-image: none !important;
-  background-color: #bbb !important;
-}
-
-.tabbrowser-tab[multiselected]:-moz-lwtheme,
-.tabbrowser-tab[visuallyselected="true"]:-moz-lwtheme {
-  color: rgb(0, 0, 0) !important;
-}
-
-:root[lwt-toolbar-field-focus-brighttext] {
-  --lwt-popup-brighttext-url-color: rgb(90, 175, 245) !important;
-}
-
-:root:-moz-lwtheme-brighttext {
-  --focus-outline-color: rgb(90, 175, 245) !important;
-}
-
-
-
-
-
-/* ----------------------------------------------- */
 :root {
-  /* Tabbar: reduce tab margin */
-  --tab-block-margin: 4px 3px !important;
+  --tab-min-height: 20px !important;
 }
 
-/* Tab: Reduce height */
-.tabbrowser-tab {
-  min-height: 24px !important;
+:root:not([uidensity="compact"]):not([uidensity="touch"]) #nav-bar {
+  margin-top  : -30px !important;
+  height      : 29px !important;
 }
 
-/* Tab: Ensure tab height doesn't augment when arrowscrollbox is visible  */
-#tabbrowser-arrowscrollbox {
-  --tab-min-height: 31px !important;
-  max-height: var(--tab-min-height);
-}
-
-/* Tab: Attention icon */
-.tabbrowser-tab:is([image], [pinned])>.tab-stack>.tab-content[attention]:not([selected="true"]),
-.tabbrowser-tab>.tab-stack>.tab-content[pinned][titlechanged]:not([selected="true"]) {
-  background-position-x: left 2px !important;
-  background-position-y: bottom 12.5px !important;
-}
+#tabbrowser-tabs {
+    margin-top  : -1px !important;
+    height: 30px !important;}
 
 /* URLBar: Fix vertical alignment */
 #urlbar[breakout=true]:not([open="true"]) {
@@ -80,13 +36,14 @@ menupopup>menu {
 
 /* URLBar: Fix URL address vertical aligment when megabar is open */
 #urlbar[breakout=true][open="true"] {
-  --urlbar-toolbar-height: 30px !important;
+--urlbar-toolbar-height: 30px !important;
 }
 
 /* URLBar: Reduce row items padding */
 .urlbarView-row-inner {
+  
   padding-inline: var(--urlbarView-item-inline-padding);
-  padding-block: 2px !important;
+	padding-block: 2px !important;
 }
 
 /* URLBar: Reduce and realign row bookmark icons */
@@ -117,48 +74,4 @@ menupopup>menu {
 #urlbar-container {
   --urlbar-container-height: 30px !important;
   margin-top: 0 !important;
-}
-
-/* Reload Button: Fix vertical alignment */
-#reload-button {
-  margin-block-start: -2px !important;
-}
-
-/* AppMenu: Header */
-.panel-header {
-  padding: 4px 0 0 4px !important;
-}
-
-/* AppMenu: Header button */
-.panel-header>.subviewbutton-back {
-  padding: 4px !important;
-}
-
-
-
-
-/* naprawa gownianej ikony glosniczka, moze kiedys naprawia i bedzie do wywalenia */
-
-.tab-icon-stack:is([muted],[soundplaying],[activemedia-blocked]){
-  grid-template-areas: "a s";
-}
-
-.tab-icon-overlay:is([muted],[soundplaying],[activemedia-blocked]) {
-  grid-area: s;
-}
-
-.tab-icon-overlay {
-  background-position: center !important;
-  fill: currentColor !important;
-    background-color: color-mix(in srgb, var(--lwt-accent-color) 60%, transparent) !important;
-}
-
-.tab-icon-overlay:hover {
-  filter: brightness(1.10)!important;
-  opacity: 0.8 !important;
-    background-color: color-mix(in srgb, var(--lwt-accent-color) 60%, ghostwhite) !important;
-}
-
-.tab-icon-stack:is([soundplaying], [muted], [activemedia-blocked]) > * {
-  opacity: 1 !important;
 }
