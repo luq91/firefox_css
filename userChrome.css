@@ -79,7 +79,3 @@ menupopup>menu {
   --urlbar-container-height: 30px !important;
   margin-top: 0 !important;
 }
-
-
-#urlbar-container {
-transform: scale(0.1) !important;}
