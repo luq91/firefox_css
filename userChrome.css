@@ -15,6 +15,15 @@ menupopup>menu {
 	padding-block: 0px !important;
 }
 
+/* odstepy na pasku kart */
+.titlebar-spacer[type="post-tabs"] {
+  display: none;
+}
+
+.titlebar-spacer[type="pre-tabs"] {
+  width: 1px !important;
+}
+
 :root {
   --tab-min-height: 20px !important;
 }
