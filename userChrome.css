@@ -40,19 +40,19 @@ menupopup>menu {
 /* URLBar: Fix vertical alignment */
 #urlbar[breakout=true]:not([open="true"]) {
   --urlbar-height: 20px !important;
-  --urlbar-toolbar-height: 24px !important;
+  --urlbar-toolbar-height: 20px !important;
 }
 
 /* URLBar: Fix URL address vertical aligment when megabar is open */
 #urlbar[breakout=true][open="true"] {
---urlbar-toolbar-height: 30px !important;
+--urlbar-toolbar-height: 20px !important;
 }
 
 /* URLBar: Reduce row items padding */
 .urlbarView-row-inner {
   
   padding-inline: var(--urlbarView-item-inline-padding);
-	padding-block: 2px !important;
+	padding-block: 1px !important;
 }
 
 /* URLBar: Reduce and realign row bookmark icons */
@@ -61,11 +61,6 @@ menupopup>menu {
   height: 10px !important;
   margin-bottom: 0 !important;
   margin-inline-start: 10px !important;
-}
-
-/* URLBar: Reduce "This time, serach with" padding */
-#urlbar .search-one-offs:not([hidden]) {
-  padding-block: 4px !important;
 }
 
 /* Searchbar: Ensure toolbar height doesn't augment when searchbar is visible */
@@ -84,3 +79,7 @@ menupopup>menu {
   --urlbar-container-height: 30px !important;
   margin-top: 0 !important;
 }
+
+
+#urlbar-container {
+transform: scale(0.1) !important;}
