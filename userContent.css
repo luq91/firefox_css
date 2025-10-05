@@ -1,19 +1,20 @@
 * {
-  scrollbar-width: thin !important;
-  scrollbar-color: rgb(121, 121, 123) rgb(35, 35, 39);
+	scrollbar-width: thin !important;
+	scrollbar-color: rgb(121, 121, 123) rgb(35, 35, 39);
 }
 @-moz-document url(about:privatebrowsing) {
-	html.private div.showSearch button.search-handoff-button { 
-	  background-color: #42414D !important; } /* search box back color */
+	html.private div.showSearch button.search-handoff-button {
+		background-color: #42414D !important; 
+		} /* search box back color */
 	html.private {
-    --in-content-page-background: #2B2A33 !important;
-	}
+		--in-content-page-background: #2B2A33 !important;
+		}
     .info {
-        display: none !important;
-    }
+		display: none !important;
+		}
 	.search-handoff-button{
 		display: none !important;
-	}
+		}
 }
 
 html.private .logo {background-image: url("picon.png") !important;}
