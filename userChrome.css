@@ -18,11 +18,3 @@ menupopup>menu {
 .titlebar-spacer[type="pre-tabs"] {
 	width: 1px !important;
 }
-
-
-
-/* URLBar: Reduce row items padding */
-.urlbarView-row-inner {
-	padding-inline: var(--urlbarView-item-inline-padding);
-	padding-block: 1px !important;
-}
