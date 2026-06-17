@@ -7,7 +7,7 @@
 /* context menu */
 menupopup>menuitem,
 menupopup>menu {
-	padding-block: 0px !important;
+	padding-block: 1px !important;
 }
 
 /* odstepy na pasku kart */
